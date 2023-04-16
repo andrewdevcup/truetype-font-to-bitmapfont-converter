@@ -2,7 +2,7 @@
 Very simple Truetype / Opentype font to bitmap font converter
 
 ## How to use
-* Go to the <a href="https://www.youtube.com/watch?v=B-XRJ9EGsoQ">Github Page</a><br>
+* Go to the <a href="https://andrewdevcup.github.io/truetype-font-to-bitmapfont-converter/">Github Page</a><br>
 * Select a ttf/otf/woff font to get a preview and start the process.<br>
 * Adjust offset, font size and canvas size as needed.<br>
 * Save bitmaps and data (csv format with comma separator)<br>
