@@ -7,6 +7,9 @@
 *
 */
 
+// Polyfix for:
+if(self.setImmediate === void 0) self.setImmediate = self.setTimeout;
+
 onload = ()=>{
 	canvas = document.body.querySelector('canvas');
 	ctx = canvas.getContext('2d');
