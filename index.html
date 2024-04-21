@@ -10,10 +10,11 @@
 	<b>Open Type / True Type to Bitmap Font Converter</b><br><br>
 	<text>Select TTF/OTF/WOFF Font: </text> <input type='file'> <input type='button' value='Restart'>
 	 | <input type="button" value="Save bitmaps and data" disabled>
-	 | Size: <input type="range" min="12" max="386"	value="72"><text id="size">72</text>px 
+	 | Size: <input type="range" min="8" max="386"	value="72"><text id="size">72</text>px 
 	 | Y Offset: <input type="range" min="0" max="511" value="256"/><text id="yoffset">256</text>px
 	 <input type="button" value="Add Char">
 	 <input id = "canvasSizBtn" type="button" value="1024x1024">
+	 <input id="smoothchk" type="checkbox"><label for="smoothchk">Pixelated</label>
 	 <br>
 	 <br>
 	<canvas width="64" height="64" style="width:40%"></canvas>

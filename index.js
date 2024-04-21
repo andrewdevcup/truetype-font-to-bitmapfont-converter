@@ -24,6 +24,23 @@ onload = ()=>{
 	
 	c2.width=c2.height=1024
 
+	document.getElementById("canvasSizBtn").onclick = function() {
+		var s = prompt("Enter a size for the canvas [width]x[height]", c2.width + "x" + c2.height);
+		if(s.indexOf("x") == -1) return alert("Not a valid size (missing x)")
+		s = s.split("x");
+		if(isNaN(s[0]) || isNaN(s[1])) return alert("Not a valid size (inproper format)")
+		if(s[0] < 8 || s[1] < 8) return alert("Canvas size too small!!!")
+
+		c2.width = s[0]
+		c2.height = s[1]
+		this.value = s.join("x")
+	}
+
+	document.getElementById("smoothchk").onclick = function() {
+		ct2.imageSmoothingEnabled = !this.checked
+		c2.style.imageRendering = this.checked ? 'pixelated' : '' 
+	}
+
 	canvas.style.backgroundColor = 'black';
 	
 	fontName = "BitmapFont";
